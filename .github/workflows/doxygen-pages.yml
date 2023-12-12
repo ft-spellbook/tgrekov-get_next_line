@@ -15,3 +15,4 @@ jobs:
       name: "tgrekov-get_next_line"
       brief: "HIVE gnl Nov 2023"
       extract_static: YES
+      hide_undoc_members: YES
