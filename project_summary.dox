@@ -1,0 +1,14 @@
+/**
+ * @page project_summary Project Summary
+ * @htmlonly
+ * <div id="author_date">
+ * tgrekov 2023/12/12 2023/12/12
+ * </div>
+ * @endhtmlonly
+ *
+ * Read from a file descriptor line by line each call.
+ *
+ * You can access everything in this project through these links:  
+ * @ref get_next_line.h  
+ * @ref get_next_line_bonus.h
+ */
