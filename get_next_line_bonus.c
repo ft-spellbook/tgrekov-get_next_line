@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 02:23:33 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/12/12 07:36:06 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/12/12 07:48:20 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -130,11 +130,11 @@ static size_t	fill_line_buf(int fd, char **line_buf, size_t *first_line_len)
  */
 char	*get_next_line(int fd)
 {
-	static char		*line_buf[MAX_FD] = {0};
+	static char		*line_buf[MAX_FD + 1] = {0};
 	size_t			first_line_len;
 	char			*out;
 
-	if (fd < 0 || BUFFER_SIZE < 1)
+	if (fd < 0 || fd > MAX_FD || BUFFER_SIZE < 1)
 		return (0);
 	fill_line_buf(fd, line_buf + fd, &first_line_len);
 	if (!first_line_len)

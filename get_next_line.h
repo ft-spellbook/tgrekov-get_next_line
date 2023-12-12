@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 02:23:52 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/12/12 06:04:22 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/12/12 07:48:59 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,13 @@
  */
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 1024
+# endif
+
+/**
+ * @brief Max open file descriptors per process
+ */
+# ifndef MAX_FD
+#  define MAX_FD 1024
 # endif
 
 # include "stdlib.h"

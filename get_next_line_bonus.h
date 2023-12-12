@@ -6,7 +6,7 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 02:23:52 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/12/12 07:31:38 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/12/12 07:48:47 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,9 @@
 /**
  * @brief Max open file descriptors per process
  */
-# define MAX_FD 1024
+# ifndef MAX_FD
+#  define MAX_FD 1024
+# endif
 
 # include "stdlib.h"
 # include "unistd.h"
