@@ -10,13 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/**
- * @file get_next_line_utils_bonus.c
- * @dontinclude get_next_line_utils_bonus.c
- * @line /\* *********
- * @until /\* *********
- */
-
 #include "get_next_line_bonus.h"
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
