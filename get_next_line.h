@@ -10,9 +10,20 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * @file get_next_line.h
+ * @dontinclude get_next_line.h
+ * @line /\* *********
+ * @until /\* *********
+ */
+
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
 
+/**
+ * @brief Set default BUFFER_SIZE if it is not defined at compile time
+ * 
+ */
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 1024
 # endif
