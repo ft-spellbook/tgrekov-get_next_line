@@ -6,13 +6,24 @@
 /*   By: tgrekov <tgrekov@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 02:23:52 by tgrekov           #+#    #+#             */
-/*   Updated: 2023/10/30 03:47:58 by tgrekov          ###   ########.fr       */
+/*   Updated: 2023/12/12 06:04:22 by tgrekov          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/**
+ * @file get_next_line.h
+ * @dontinclude get_next_line.h
+ * @line /\* *********
+ * @until /\* *********
+ */
 
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
 
+/**
+ * @brief Set default BUFFER_SIZE if it is not defined at compile time
+ * 
+ */
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 1024
 # endif
@@ -21,9 +32,9 @@
 # include "unistd.h"
 
 char	*get_next_line(int fd);
-size_t	find_line_end(char *s, size_t *len);
-char	*strjoin_free_first(char *s1, const char *s2);
-char	*consume_and_resize(char **s1, size_t len);
+char	*ft_strdup(const char *s1);
+char	*ft_strjoin(char const *s1, char const *s2);
+void	*ft_memcpy(void *dst, const void *src, size_t n);
 size_t	ft_strlen(const char *str);
 
 #endif
